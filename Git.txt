@@ -1,0 +1,86 @@
+Elena@LAPTOP-00FHI8HK MINGW32 ~/Desktop/ji (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ji.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Elena@LAPTOP-00FHI8HK MINGW32 ~/Desktop/ji (master)
+$ git add ji.txt
+
+Elena@LAPTOP-00FHI8HK MINGW32 ~/Desktop/ji (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   ji.txt
+
+
+Elena@LAPTOP-00FHI8HK MINGW32 ~/Desktop/ji (master)
+$ git commit -m "ji"
+[master (root-commit) 144ac48] ji
+ 1 file changed, 1 insertion(+)
+ create mode 100644 ji.txt
+
+Elena@LAPTOP-00FHI8HK MINGW32 ~/Desktop/ji (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Elena@LAPTOP-00FHI8HK MINGW32 ~/Desktop/ji (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ji.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Elena@LAPTOP-00FHI8HK MINGW32 ~/Desktop/ji (master)
+$ git add -u
+
+Elena@LAPTOP-00FHI8HK MINGW32 ~/Desktop/ji (master)
+$ git commit -m "jii"
+[master 7508c10] jii
+ 1 file changed, 1 insertion(+)
+
+Elena@LAPTOP-00FHI8HK MINGW32 ~/Desktop/ji (master)
+$ echo "# ji" >> README.md
+
+Elena@LAPTOP-00FHI8HK MINGW32 ~/Desktop/ji (master)
+$ git add README.md
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory
+
+Elena@LAPTOP-00FHI8HK MINGW32 ~/Desktop/ji (master)
+$ git commit -m "first commit"
+[master 8cf32e3] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+Elena@LAPTOP-00FHI8HK MINGW32 ~/Desktop/ji (master)
+$ git remote add origin https://github.com/Sophia-gis/ji.git
+
+Elena@LAPTOP-00FHI8HK MINGW32 ~/Desktop/ji (master)
+$ git push -u origin master
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (9/9), 658 bytes | 329.00 KiB/s, done.
+Total 9 (delta 0), reused 0 (delta 0)
+To https://github.com/Sophia-gis/ji.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Elena@LAPTOP-00FHI8HK MINGW32 ~/Desktop/ji (master)
+$
