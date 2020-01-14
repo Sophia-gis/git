@@ -84,3 +84,8 @@ Branch 'master' set up to track remote branch 'master' from 'origin'.
 
 Elena@LAPTOP-00FHI8HK MINGW32 ~/Desktop/ji (master)
 $
+git add.#新加的所有文件放缓存区
+git git commit -m "文件名"
+git push
+
+（cd..#回退到上一个目录）
